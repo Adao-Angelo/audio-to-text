@@ -1,9 +1,9 @@
 import speech_recognition as sr
 
-
 def audio_para_texto(caminho_arquivo):
     recognizer = sr.Recognizer()
 
+    
     with sr.AudioFile(caminho_arquivo) as source:
         audio = recognizer.record(source)
     try:
